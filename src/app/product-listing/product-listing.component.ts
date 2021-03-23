@@ -9,12 +9,12 @@ import { DataService } from '../services/data.services';
 })
 export class ProductListingComponent implements OnInit {
   isshow = false;
-  data1:{};
+  data2:{};
   constructor(private _DataService:DataService) { }
 
   ngOnInit(): void {
     this._DataService.getConfig()
-      .subscribe((data)=>{console.log(this.data1)});
+      .subscribe((data)=>{console.log(this.data2)});
   }
   showConfig() {
     

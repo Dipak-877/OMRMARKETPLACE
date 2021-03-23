@@ -1,0 +1,92 @@
+.myProfiletext{
+    font-size: 18px;
+    font-family: 'Celias_Bold';
+}
+li:active{
+    color: #285CF0;;
+}
+li{
+    color: black;;
+}
+li:visited {
+    color: #285CF0;
+  }
+  
+  /* mouse over link */
+  li:hover {
+    color: #285CF0;
+  }
+.imageTop{
+    position: absolute;
+       max-height: 115%;
+       width: 100%;
+       max-width: 99%;  margin-left: -6px;
+}
+
+.topClass{
+    margin-left: 81px;
+}
+  
+  @media only screen and (max-width: 320px) {
+    .imageheiMob{
+     position: absolute;
+     height: 104%;
+     width: 100%;
+     max-width: 99%;
+     margin-left: -6px;
+    }
+    .topClass{
+        margin-left:0px ;
+    }
+    }
+
+
+
+    @media only screen and (max-width: 425px) {
+        .imageheiMob{
+         position: absolute;
+         height: 104%;
+         width: 100%;
+         max-width: 99%;
+         margin-left: -6px;
+        }
+        .topClass{
+            margin-left:0px ;
+        }
+        }
+
+        @media only screen and (max-width: 576px) {
+            .imageheiMob{
+             position: absolute;
+             height: 104%;
+             width: 100%;
+             max-width: 99%;
+             margin-left: -6px;
+            }
+            .topClass{
+                margin-left:0px ;
+            }
+            }
+            @media only screen and (max-width: 768px) {
+                .imageheiMob{
+                 position: absolute;
+                 height: 104%;
+                 width: 100%;
+                 max-width: 99%;
+                 margin-left: -6px;
+                }
+                .topClass{
+                    margin-left:0px ;
+                }
+                }
+
+
+
+
+
+
+
+
+
+
+  

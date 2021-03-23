@@ -1,0 +1,730 @@
+<!--=========-TOP_BAR============-->
+
+<!-- <nav class="navbar navbar-expand-lg bg-white fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" (click)="isCollapsed = !isCollapsed" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Brand</a>
+      </div>
+      <div class="collapse navbar-collapse" [collapse]="isCollapsed">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+<nav class="navbar navbar-default navbar-expand-lg bg-white fixed-top">
+    <div class="container-fluid">
+        <a href="/" style="width: 50%;">
+            <img class="" src="assets/img/pwc.png" width="20%" height="20%"></a>
+        <div class="navbar-header">
+            <!-- <button type="button" class="navbar-toggle collapsed" (click)="isCollapsed = !isCollapsed"
+                data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> -->
+            <button class="navbar-toggler btn-outline-primary" type="button" data-toggle="collapse"
+                (click)="isCollapsed = !isCollapsed" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" [collapse]="isCollapsed" id="navbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link HEADERfont" (click)="openModal(template)">
+                        <i class="fa fa-user-circle ml-3 mr-2 text-dark"></i><span
+                            class="hidden-xs text-dark">Login</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link HEADERfont">
+                        <i class="fa fa-sign-in ml-3 mr-2 text-dark"></i><span class="hidden-xs text-dark"
+                            (click)="openCreat(template1)">Sign Up</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--=========-TOP_BAR============-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-7 col-md-6 col-sm-12 col-12 imageMobileCus">
+            <!-- <img src="assets/img/foodImg.png" class="rounded imagewid" alt="Cinque Terre" /> -->
+            <carousel>
+                <slide>
+                    <img src="assets/img/foodImg.png" alt="first slide" style="display: block; width: 100%;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </slide>
+                <slide>
+                    <img src="assets/img/banner3.png" alt="second slide" style="display: block; width: 100%;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </slide>
+                <slide>
+                    <img src="assets/img/banner4.png" alt="third slide" style="display: block; width: 100%;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Third slide label</h3>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </slide>
+                <slide>
+                    <img src="assets/img/banner3before.png" alt="third slide" style="display: block; width: 100%;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Forth slide label</h3>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </slide>
+            </carousel>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12 col-12 bannerClass">
+            <h1 class="mt-4 foodTTExt">
+                <strong class="foodlove foodloveMobile">Food You Love ,<br />
+                    Delivered To You</strong>
+            </h1>
+            <p class="mt-4 fontREg foodTTExt">
+                We deliver food from your favorite restaurants
+            </p>
+            <div class="input-group form-group has-search mt-4 mobileSize">
+                <span class="fa fa-map-marker form-control-feedback" style="font-size: 24px"></span>
+                <input type="text" class="form-control" placeholder="Search" style="height: 60px" />
+                <div class="input-group-append">
+                    <button class="btn btn-warning" type="button">
+                        <i class="fa fa-arrow-right text-white" style="font-size: 33px"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mt-5">
+        <div class="col-lg-12">
+            <p class="offersArround">Collections</p>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-lg-3 col-md-12 mb-3">
+  
+            
+            <div class="view overlay hm-black-strong">
+                <img src="assets/img/z1.webp" class="img-fluid" alt="sample image">
+                
+                <div class="mask flex-center">
+                    <p class="white-text">Order Food Online</p>
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="col-lg-3 col-md-12 mb-3">
+
+            <div class="view overlay hm-black-strong">
+                <img src="assets/img/z2.webp" class="img-fluid" alt="sample image">
+                <div class="mask flex-center">
+                    <p class="white-text">Go out for a meal</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-3 col-md-12 mb-3">
+
+            <div class="view overlay hm-black-strong">
+                <img src="assets/img/z3.jpeg" class="img-fluid" alt="sample image">
+                <div class="mask flex-center">
+                    <p class="white-text">Nightlife & Clubs</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-3 col-md-12 mb-3">
+
+            <div class="view overlay hm-black-strong">
+                <img src="assets/img/z4.webp" class="img-fluid" alt="sample image">
+                <div class="mask flex-center">
+                    <p class="white-text">PwC</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-lg-12">
+            <p class="offersArround">Popular Restaurants Around You</p>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-lg-4">
+            <div class="card polaroid">
+                <img src="assets/img/foodshome.png" style="height: auto" class="rounded" alt="Cinque Terre" />
+                <div class="carsolLeft">
+                    <a href="#">
+                      <span class="left"></span>
+                    </a>
+                  </div>
+                <div class="card-body">
+                    <img src="assets/img/fooodsSmall.png" style="position: absolute" />
+                    
+                    <!-- <button class="topleftbtn1 btn btn-sm ">Exclusive</button> -->
+                    <span class="card-title cardfoods">Burger King</span><br />
+                    <span style="
+              font-family: 'Celias_Reg';
+
+              font-size: 15px;
+              display: inline-block;
+
+              padding-left: 84px;
+            ">Bengali-Chinese-Indian</span>
+                </div>
+               
+                <div class="card-body gapCard">
+                    <p class="alignleft cardfoSmall">
+                        <i class="fa fa-heart" aria-hidden="true"></i> 104
+                    </p>
+                    <p class="aligncenter cardfoSmall">Rs. 200 Minimum</p>
+                    <p class="alignright cardfoSmall">60 Mins</p>
+                </div>
+               
+                <hr />
+                <div class="card-body gapCard1">
+                    <p class="card-title cardfoSmall">
+                        <img src="assets/img/percentage.png" style="width: 18px" alt="Cinque Terre" />15% off on orders
+                        above Rs 50
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card polaroid">
+                <img src="assets/img/kfcImage.png" style="height: auto" class="rounded" alt="Cinque Terre" />
+                
+                <div class="card-body">
+                    <img src="assets/img/kfcsmall.png" style="position: absolute" />
+                    <!-- <button class="topleftbtn1 btn btn-sm ">Exclusive</button> -->
+                    <span class="card-title cardfoods">KFC</span><br />
+                    <span style="
+              font-family: 'Celias_Reg';
+
+              font-size: 15px;
+              display: inline-block;
+
+              padding-left: 84px;
+            ">Bengali-Chinese-Indian</span>
+                </div>
+                <div class="card-body gapCard">
+                    <p class="alignleft cardfoSmall">
+                        <i class="fa fa-heart" aria-hidden="true"></i> 104
+                    </p>
+                    <p class="aligncenter cardfoSmall">Rs. 200 Minimum</p>
+                    <p class="alignright cardfoSmall">60 Mins</p>
+                </div>
+                <hr />
+                <div class="card-body gapCard1">
+                    <p class="card-title cardfoSmall">
+                        <img src="assets/img/percentage.png" style="width: 18px" alt="Cinque Terre" />
+                        15% off on orders above Rs 50
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card polaroid">
+                <img src="assets/img/icecream.png" style="height: auto" class="rounded" alt="Cinque Terre" />
+                <div class="carsolright">
+                    <a href="#">
+                      <span class="right"></span>
+                    </a>
+                  </div>
+                <div class="card-body">
+                    <img src="assets/img/coffesmall.png" style="position: absolute" />
+                    <!-- <button class="topleftbtn1 btn btn-sm ">Exclusive</button> -->
+                    <span class="card-title cardfoods">Gloria Jean's Coffees</span><br />
+                    <span style="
+              font-family: 'Celias_Reg';
+
+              font-size: 15px;
+              display: inline-block;
+
+              padding-left: 84px;
+            ">Bengali-Chinese-Indian</span>
+                </div>
+                <div class="card-body gapCard">
+                    <p class="alignleft cardfoSmall">
+                        <i class="fa fa-heart" aria-hidden="true"></i> 104
+                    </p>
+                    <p class="aligncenter cardfoSmall">Rs. 200 Minimum</p>
+                    <p class="alignright cardfoSmall">60 Mins</p>
+                </div>
+                <hr />
+                <div class="card-body gapCard1">
+                    <p class="card-title cardfoSmall">
+                        <img src="assets/img/percentage.png" style="width: 18px" alt="Cinque Terre" />
+                        15% off on orders above Rs 50
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-lg-12">
+            <p class="offersArround">Exclusive Offers Of The Day</p>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-lg-4">
+            <div class="card polaroid">
+                <img src="assets/img/marketplace.png" style="height: 300px" class="rounded" alt="Cinque Terre" />
+                <div class="carsolLeft">
+                    <a href="#">
+                      <span class="left"></span>
+                    </a>
+                  </div>
+                <div>
+                    <button class="topleftbtn btn btn-sm btn-outline-primary">
+                        Pwc Deals
+                    </button>
+                    <p class="topleftbtnpara">Flat 25% OFF</p>
+                    <p class="topleftsmallpara">On First Food Order</p>
+                    <button class="btn btn-sm btn-primary btnsmaii">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card polaroid">
+                <img src="assets/img/data1.png" style="height: 300px" class="rounded" alt="Cinque Terre" />
+                <div>
+                    <button class="topRighttbtn btn btn-sm btn-outline-primary">
+                        Pwc Deals
+                    </button>
+                    <p class="topRightbtnpara">Flat 30% OFF</p>
+                    <p class="topRightsmallpara">On First Food Order</p>
+                    <button class="btn btn-sm btn-primary btnsmaiiR">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card polaroid">
+                <img src="assets/img/bannedOffersOfDay3.png" style="height: 300px" class="rounded" alt="Cinque Terre" />
+                <div class="carsolright">
+                    <a href="#">
+                      <span class="right"></span>
+                    </a>
+                  </div>
+                <div>
+                    <button class="topleftbtn btn btn-sm btn-outline-primary">
+                        Pwc Deals
+                    </button>
+                    <p class="topleftbtnpara">Flat 40% OFF</p>
+                    <p class="topleftsmallpara">On First Food Order</p>
+                    <button class="btn btn-sm btn-primary btnsmaii">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-lg-12">
+            <p class="offersArround">Pick Up or Get Delivery from your Favourite Restaurants</p>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-lg-4">
+            <div class="card border-0">
+                <div class="card-block text-center p-3">
+                    <img src="assets/img/shop.svg" class="rounded" style="width: 90px" alt="Cinque Terre" />
+                    <!-- <i class="fa fa-home" style="font-size:100px;"></i> -->
+                </div>
+                <div class="card-block text-center p-3">
+                    <!-- <img src="assets/img/download.jpeg" class="rounded" style="width: 100%;" alt="Cinque Terre"> -->
+                    <h1 class="text-dark fontSize">No Contact Delivery</h1>
+                </div>
+                <div class="card-block text-center p-3">
+                    <!-- <img src="assets/img/download.jpeg" class="rounded" style="width: 100%;" alt="Cinque Terre"> -->
+                    <p class="fontTextSize">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card border-0">
+                <div class="card-block text-center p-3">
+                    <img src="assets/img/placeholder.svg" class="rounded" style="width: 90px" alt="Cinque Terre" />
+                </div>
+                <div class="card-block text-center p-3">
+                    <!-- <img src="assets/img/download.jpeg" class="rounded" style="width: 100%;" alt="Cinque Terre"> -->
+                    <h1 class="text-dark fontSize">Food Truck Hygiene</h1>
+                </div>
+                <div class="card-block text-center p-3">
+                    <!-- <img src="assets/img/download.jpeg" class="rounded" style="width: 100%;" alt="Cinque Terre"> -->
+                    <p class="fontTextSize">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card border-0">
+                <div class="card-block text-center p-3">
+                    <img src="assets/img/Outline.svg" class="rounded" style="width: 90px" alt="Cinque Terre" />
+                </div>
+                <div class="card-block text-center p-3">
+                    <!-- <img src="assets/img/download.jpeg" class="rounded" style="width: 100%;" alt="Cinque Terre"> -->
+                    <h1 class="text-dark fontSize">Delivery Agent Safety</h1>
+                </div>
+                <div class="card-block text-center p-3">
+                    <!-- <img src="assets/img/download.jpeg" class="rounded" style="width: 100%;" alt="Cinque Terre"> -->
+                    <p class="fontTextSize">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-lg-12">
+            <p class="offersArround">Customer Safety is our Priority</p>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-lg-4">
+            <div class="card border-0">
+                <div class="card-block text-center p-3">
+                    <img src="assets/img/shop.svg" class="rounded" style="width: 90px" alt="Cinque Terre" />
+                    <!-- <i class="fa fa-home" style="font-size:100px;"></i> -->
+                </div>
+                <div class="card-block text-center p-3">
+                    <!-- <img src="assets/img/download.jpeg" class="rounded" style="width: 100%;" alt="Cinque Terre"> -->
+                    <h1 class="text-dark fontSize">No Contact Delivery</h1>
+                </div>
+                <div class="card-block text-center p-3">
+                    <!-- <img src="assets/img/download.jpeg" class="rounded" style="width: 100%;" alt="Cinque Terre"> -->
+                    <p class="fontTextSize">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card border-0">
+                <div class="card-block text-center p-3">
+                    <img src="assets/img/placeholder.svg" class="rounded" style="width: 90px" alt="Cinque Terre" />
+                </div>
+                <div class="card-block text-center p-3">
+                    <!-- <img src="assets/img/download.jpeg" class="rounded" style="width: 100%;" alt="Cinque Terre"> -->
+                    <h1 class="text-dark fontSize">Food Truck Hygiene</h1>
+                </div>
+                <div class="card-block text-center p-3">
+                    <!-- <img src="assets/img/download.jpeg" class="rounded" style="width: 100%;" alt="Cinque Terre"> -->
+                    <p class="fontTextSize">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card border-0">
+                <div class="card-block text-center p-3">
+                    <img src="assets/img/Outline.svg" class="rounded" style="width: 90px" alt="Cinque Terre" />
+                </div>
+                <div class="card-block text-center p-3">
+                    <!-- <img src="assets/img/download.jpeg" class="rounded" style="width: 100%;" alt="Cinque Terre"> -->
+                    <h1 class="text-dark fontSize">Delivery Agent Safety</h1>
+                </div>
+                <div class="card-block text-center p-3">
+                    <!-- <img src="assets/img/download.jpeg" class="rounded" style="width: 100%;" alt="Cinque Terre"> -->
+                    <p class="fontTextSize">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6">
+            <div class="card border-0">
+                <div class="card-block text-center p-2">
+                    <!-- <img src="assets/img/download.jpeg" class="rounded" style="width: 100%;" alt="Cinque Terre"> -->
+                    <h1 class="homeFontApp">Get More With Our Application</h1>
+                </div>
+                <div class="card-block text-center p-2">
+                    <!-- <img src="assets/img/download.jpeg" class="rounded" style="width: 100%;" alt="Cinque Terre"> -->
+                    <p class="HomLInk2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                        ad minim veniam
+                    </p>
+                </div>
+                <div class="row mt-2 mb-4">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                        <button type="button" class="btn btn-light btn-lg w-100 HomLInk3">
+                            <span class="badge badge-pill badge-primary m-3">1</span>Food
+                            Delivery Status
+                        </button>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                        <button type="button" class="btn btn-light btn-lg w-100 HomLInk3">
+                            <span class="badge badge-pill badge-primary m-3">2</span>Order
+                            From Any Location
+                        </button>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                        <button type="button" class="btn btn-light btn-lg w-100 HomLInk3">
+                            <span class="badge badge-pill badge-primary m-3">3</span>Get
+                            Important Notices
+                        </button>
+                    </div>
+                </div>
+                <div class="row mb-4 ml-2">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6">
+                        <div class="row mb-4">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="page-content page-container" id="page-content">
+                                    <div class="padding">
+                                        <div class="row container d-flex justify-content-center">
+                                            <div class="template-demo mt-2">
+                                                <button class="btn btn-dark btn-icon-text">
+                                                    <i class="fa fa-apple btn-icon-prepend mdi-36px"></i>
+                                                    <span class="d-inline-block text-left">
+                                                        <small class="font-weight-light d-block">Available on
+                                                            the</small>
+                                                        App Store
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="page-content page-container" id="page-content">
+                                    <div class="padding">
+                                        <div class="row container d-flex justify-content-center">
+                                            <div class="template-demo mt-2">
+                                                <button class="btn btn-dark btn-icon-text">
+                                                    <i class="fa fa-android btn-icon-prepend mdi-36px"></i>
+                                                    <span class="d-inline-block text-left">
+                                                        <small class="font-weight-light d-block">Get it on the</small>
+                                                        Google Play
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src="assets/img/01-splash@2x.png" class="rounded" style="width: 100%" alt="Cinque Terre" />
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src="assets/img/15-specialities@2x.png" class="rounded" style="width: 100%"
+                        alt="Cinque Terre" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<ng-template #template>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left login"><strong>LOGIN</strong></h4>
+        <!-- <p class="text-muted font-weight-bold ml-2 mt-1">Or <a href="#" class="text-primary ml-2"(click)="openCreat(template1)">Creat Account</a></p> -->
+
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="input-group col-lg-12 mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-white px-4 border-md border-right-0">
+                        <i class="fa fa-envelope text-muted"></i>
+                    </span>
+                </div>
+                <input id="email" type="email" name="email" placeholder="User Name/ Phone Number"
+                    class="form-control bg-white border-left-0 border-md" />
+            </div>
+            <div class="input-group col-lg-12 mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-white px-4 border-md border-right-0">
+                        <i class="fa fa-lock text-muted"></i>
+                    </span>
+                </div>
+                <input id="password" type="password" name="password" placeholder="Password"
+                    class="form-control bg-white border-left-0 border-md" />
+            </div>
+            <div class="form-group col-lg-12 mx-auto mb-0 text-right">
+                <p class="font-weight-bold">
+                    <a href="#" class="text-primary ml-2 forgotpaswd" (click)="resetPassword(template2)">Forget Password
+                        ?</a>
+                </p>
+            </div>
+            <div class="form-group col-lg-12 mx-auto mb-0">
+                <button href="#" class="btn btn-primary btn-block py-2" routerLink="/home" (click)="modalRef.hide()">
+                    <span class="font-weight-bold">Log In</span>
+                </button>
+            </div>
+            <div class="form-group col-lg-12 mx-auto d-flex align-items-center my-4">
+                <div class="border-bottom w-100 ml-5"></div>
+                <span class="px-2 small text-muted font-weight-bold text-muted">OR</span>
+                <div class="border-bottom w-100 mr-5"></div>
+            </div>
+            <div class="form-group col-lg-12 mx-auto text-center">
+                <a href="#" class="btn btn-warning py-2 btn-facebook">
+                    <i class="fa fa-google mr-2"></i>
+                    <span class="font-weight-bold">Continue with Google</span>
+                </a>
+            </div>
+            <!-- <div class="text-center w-100">
+          <p class="text-muted font-weight-bold">Create New Account? <a href="#" class="text-primary ml-2">Sign Up</a></p>
+        </div> -->
+        </div>
+    </div>
+</ng-template>
+
+<!-- creat an account -->
+<ng-template #template1>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left login"><strong>Sign Up</strong></h4>
+
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="input-group col-lg-12 mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-white px-4 border-md border-right-0">
+                        <i class="fa fa-envelope text-muted"></i>
+                    </span>
+                </div>
+                <input id="email" type="text" name="email" placeholder="Phone Number"
+                    class="form-control bg-white border-left-0 border-md" />
+            </div>
+
+            <div class="input-group col-lg-12 mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-white px-4 border-md border-right-0">
+                        <i class="fa fa-lock text-muted"></i>
+                    </span>
+                </div>
+                <input id="password" type="text" name="Name" placeholder="Name"
+                    class="form-control bg-white border-left-0 border-md" />
+            </div>
+            <div class="input-group col-lg-12 mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-white px-4 border-md border-right-0">
+                        <i class="fa fa-lock text-muted"></i>
+                    </span>
+                </div>
+                <input id="password" type="email" name="Email" placeholder="Email"
+                    class="form-control bg-white border-left-0 border-md" />
+            </div>
+            <div class="input-group col-lg-12 mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-white px-4 border-md border-right-0">
+                        <i class="fa fa-lock text-muted"></i>
+                    </span>
+                </div>
+                <input id="password" type="password" name="Email" placeholder="Password"
+                    class="form-control bg-white border-left-0 border-md" />
+            </div>
+            <div class="input-group col-lg-12 mb-4">
+                <div class="input-group-prepend">
+                    <input type="checkbox" class="mt-1 mr-1" value="" id="defaultCheck1" />
+                    <label for="defaultCheck1">
+                        Please Accept The<span class="term">Term & Condition </span>
+                    </label>
+                </div>
+            </div>
+            <div class="form-group col-lg-12 mx-auto mb-0">
+                <a href="#" class="btn btn-primary btn-block py-2">
+                    <span class="font-weight-bold">CONTINUE</span>
+                </a>
+            </div>
+
+            <div class="form-group col-lg-12 mx-auto d-flex align-items-center my-4">
+                <div class="border-bottom w-100 ml-5"></div>
+                <span class="px-2 small text-muted font-weight-bold text-muted">OR</span>
+                <div class="border-bottom w-100 mr-5"></div>
+            </div>
+            <div class="form-group col-lg-12 mx-auto text-center">
+                <a href="#" class="btn btn-warning py-2 btn-facebook">
+                    <i class="fa fa-google mr-2" aria-hidden="true"></i>
+
+                    <span class="font-weight-bold">Continue with Google</span>
+                </a>
+            </div>
+
+            <!-- <div class="text-center w-100">
+          <p class="text-muted font-weight-bold">Create New Account? <a href="#" class="text-primary ml-2">Sign Up</a></p>
+        </div> -->
+        </div>
+    </div>
+</ng-template>
+
+<!-- forget password -->
+<ng-template #template2>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left login"><strong>RESET PASSWORD</strong></h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="input-group col-lg-12 mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-white px-4 border-md border-right-0">
+                        <i class="fa fa-lock text-muted"></i>
+                    </span>
+                </div>
+                <input id="password" type="email" name="Email" placeholder="Email"
+                    class="form-control bg-white border-left-0 border-md" />
+            </div>
+            <div class="form-group col-lg-12 mx-auto mb-0">
+                <a href="#" class="btn btn-primary btn-block py-2">
+                    <span class="font-weight-bold">RESET</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</ng-template>
+
+<app-footer></app-footer>

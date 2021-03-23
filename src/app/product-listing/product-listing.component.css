@@ -1,0 +1,551 @@
+/*
+** Style Simple Ecommerce Theme for Bootstrap 4
+** Created by T-PHP https://t-php.fr/43-theme-ecommerce-bootstrap-4.html
+*/
+.bloc_left_price {
+  color: #c01508;
+  text-align: center;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.category_block li:hover {
+  background-color: #007bff;
+}
+
+.category_block li:hover a {
+  color: #ffffff;
+}
+.classColor{
+  font-size: 20px;
+  font-family: 'Celias_Med';
+}
+.topleftbtn1{
+  position: absolute;
+    top: 6px;
+    left: 84%;
+    color: red;
+    font-size: 12px;
+    color: black;
+    font-family: 'Celias_Med';
+}
+.topRightBtn{
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  /* color: red; */
+  font-size: 12px;
+  /* color: red; */
+  font-family: 'Celias_Med';
+}
+
+.category_block li a {
+  color: #343a40;
+}
+
+.add_to_cart_block .price {
+  color: #c01508;
+  text-align: center;
+  font-weight: bold;
+  font-size: 200%;
+  margin-bottom: 0;
+}
+
+.add_to_cart_block .price_discounted {
+  color: #343a40;
+  text-align: center;
+  text-decoration: line-through;
+  font-size: 140%;
+}
+
+.product_rassurance {
+  padding: 10px;
+  margin-top: 15px;
+  background: #ffffff;
+  border: 1px solid #6c757d;
+  color: #6c757d;
+}
+
+.product_rassurance .list-inline {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.product_rassurance .list-inline li:hover {
+  color: #343a40;
+}
+
+.reviews_product .fa-star {
+  color: gold;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+footer {
+  background: #343a40;
+  padding: 40px;
+}
+
+footer a {
+  color: #f8f9fa !important
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li label {
+  display: block;
+  width: 100%;
+
+}
+
+
+
+
+
+.form ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+ul li {
+  color: #AAAAAA;
+  display: block;
+  position: relative;
+  float: left;
+  /* width: 100%;
+    height: 100px; */
+  /* border-bottom: 1px solid #333; */
+}
+
+ul li input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+}
+
+ul li label {
+  display: block;
+  position: relative;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 18px 12px 24px 63px;
+  /* padding: 25px 25px 25px 80px; */
+  margin: 10px auto;
+  height: 30px;
+  z-index: 9;
+  cursor: pointer;
+
+}
+
+ul li:hover label {
+  color: black;
+}
+
+ul li .check {
+  display: block;
+
+  position: absolute;
+  border: 2px solid #AAAAAA;
+  border-radius: 100%;
+  height: 24px;
+  width: 24px;
+  top: 26px;
+  left: 36px;
+  z-index: 5;
+  transition: border .25s linear;
+  -webkit-transition: border .25s linear;
+}
+
+ul li:hover .check {
+  border: 3px solid black;
+}
+
+ul li .check::before {
+  display: block;
+  position: absolute;
+  content: '';
+  border-radius: 100%;
+  height: 10px;
+  width: 10px;
+  top: 4px;
+  left: 4px;
+  margin: auto;
+
+}
+
+input[type=radio]:checked~.check {
+  border: 3px solid #3013d8;
+}
+
+input[type=radio]:checked~.check::before {
+  background: #3013d8;
+}
+
+input[type=radio]:checked~label {
+  color: #3013d8;
+}
+
+
+
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 16px;
+  left: 35px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked~.checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.card-link {
+  position: absolute;
+  ;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  left: 21px;
+  top: 179px;
+}
+
+.buttom-below {
+  position: absolute;
+  left: 21px;
+  top: 115px;
+}
+
+.buttomTop {
+  position: absolute;
+  left: 170px;
+}
+
+.iconRight {
+  margin-left: 199px;
+}
+
+.producttext {
+  font-size: 18px;
+  font-family: "Celias_Bold";
+  width: 100%;
+}
+
+.productsearch {
+  font-size: 18px;
+  font-family: "Celias_Reg";
+  width: 100%;
+
+}
+
+.checkedStar {
+  color: orange;
+  float: right;
+}
+
+.polaroid {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nonChecked {
+  color: white;
+  float: right;
+  border: 1px soild black;
+}
+
+.pizzaproduct {
+  position: absolute;
+  left: 369px;
+  /* right: -84px; */
+  /* float: left; */
+  top: 278px;
+  font-size: 14px;
+
+  font-family: "Celias_Med";
+  color: black;
+}
+
+.productListSidebar {
+  font-size: 14px;
+
+  font-family: "Celias_Med";
+  color: black;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: Black;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.center {
+  text-align: center;
+}
+
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #F4F4F4;
+  width: 100%;
+}
+
+.topnav p {
+  float: left;
+  display: block;
+
+  text-align: center;
+  font-size: 18px;
+  font-family: "Celias_Med";
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 15px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-family: "Celias_Reg";
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 15px 15px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: white;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media only screen and (max-width: 320px) {
+  .topnav .search-container {
+    float: none;
+  }
+
+  .buttomTop {
+    position: absolute;
+    left: 186px;
+    top: 13px;
+  }
+
+  .imageproduct {
+    height: 261px;
+  }
+
+  .topnav a,
+  .topnav input[type=text],
+  .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+
+}
+
+@media only screen and (max-width: 425px) {
+  .topnav .search-container {
+    float: none;
+  }
+
+  .buttomTop {
+    position: absolute;
+    left: 287px;
+    top: -36px;
+  }
+
+  .imageproduct {
+    height: 261px;
+  }
+
+  .topnav a,
+  .topnav input[type=text],
+  .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+
+}
+
+@media only screen and (max-width: 567px) {
+  .topnav .search-container {
+    float: none;
+  }
+
+  .buttomTop {
+    position: absolute;
+    left: 186px;
+    top: 13px;
+  }
+
+  .imageproduct {
+    height: 261px;
+  }
+
+  .topnav a,
+  .topnav input[type=text],
+  .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .topnav .search-container {
+    float: none;
+  }
+
+  .buttomTop {
+    position: absolute;
+    left: 186px;
+    top: 13px;
+  }
+
+  .imageproduct {
+    height: 261px;
+  }
+
+  .topnav a,
+  .topnav input[type=text],
+  .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+
+}

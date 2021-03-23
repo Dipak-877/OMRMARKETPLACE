@@ -1,0 +1,89 @@
+<!--=========-TOP_BAR============-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-white fixed-top">
+  <div class="container-fluid">
+    <a href="/" style="width: 50%;">
+      <img class="" src="assets/img/pwc.png" width="20%" height="20%"></a>
+    <button class="navbar-toggler bar-icon" type="button" data-toggle="collapse" (click)="isCollapsed = !isCollapsed"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive " [collapse]="isCollapsed">
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item active  mr-5">
+          <p class="nav-link" href="cart.html" class="HEADERfont"><i class="fa fa-gift " aria-hidden="true"></i>
+            Offers</p>
+        </li>
+        <li class="nav-item dropdown mr-5" dropdown>
+          <p class="nav-link " id="button-basic" dropdownToggle class="dropdown-toggle text-dark"
+            aria-controls="dropdown-basic">
+            <i class="fa fa-user-circle	mr-2"></i><span class="hidden-xs HEADERfont">Hi Dipak</span> <span
+              class="caret"></span>
+          </p>
+          <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu " role="menu" aria-labelledby="button-basic">
+            <li role="menuitem"><a class="dropdown-item" routerLink="/profile"><i class="fa fa-star mr-2"></i>My
+                Account</a></li>
+            <li class="divider dropdown-divider"></li>
+            <li role="menuitem"><a class="dropdown-item"> <i class="fa fa-home mr-2"></i>My Address</a></li>
+            <li class="divider dropdown-divider"></li>
+            <li role="menuitem"><a class="dropdown-item"> <i class="fa fa-file mr-2"></i>My Orders</a></li>
+            <li class="divider dropdown-divider"></li>
+            <li role="menuitem"><a class="dropdown-item" href="#"> <i class="fa fa-heart mr-2"></i>My Favourites</a>
+            </li>
+            <li class="divider dropdown-divider"></li>
+            <li role="menuitem"><a class="dropdown-item" href="#"> <i class="fa fa-key mr-2"></i>Change Password</a>
+            </li>
+            <li class="divider dropdown-divider"></li>
+            <li role="menuitem"><a class="dropdown-item" href="#"> <i class="fa fa-lock mr-2"></i>Logout</a></li>
+
+
+          </ul>
+        </li>
+        <li class="nav-item active  mr-5">
+          <p class="nav-link" href="cart.html" class="HEADERfont"><i class="fa fa-heart " aria-hidden="true"></i>
+            Wishlist</p>
+        </li>
+        <li class="nav-item active  mr-5">
+          <p class="nav-link" href="cart.html" class="HEADERfont"><i class="fa fa-shopping-cart "
+              aria-hidden="true"></i>
+            My Cart<sup class="text-primary">(3)</sup></p>
+        </li>
+
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- <nav class="topBar">
+      <ul class="list-inline pull-left hidden-sm hidden-xs">
+        <li> <img  class="ml-3"src="assets/img/download.png" width="50%;height:50%;"></li>
+      </ul>
+      <ul class="topBarNav pull-right ">
+        <li><a href="cart.html"class="text-dark"><i class="fa fa-gift " aria-hidden="true"></i>
+          offers</a>
+        </li>
+        <li class="dropdown " dropdown>
+            <a id="button-basic" dropdownToggle class="dropdown-toggle text-dark"
+                    aria-controls="dropdown-basic">
+                    <i class="fa fa-user-circle	 ml-3 mr-2"></i><span class="hidden-xs">Hi Dipak</span> <span class="caret"></span>
+        </a>
+            <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu w-100"
+                role="menu" aria-labelledby="button-basic">
+              <li role="menuitem"><a class="dropdown-item" routerLink="/profile" >View Profile</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="#">FAQ</a></li>
+              <li class="divider dropdown-divider"></li>
+              <li role="menuitem"><a class="dropdown-item" href="#">Log Out</a>
+              </li>
+            </ul>
+        </li>
+        <a href="#"><i class="fa fa-shopping-cart  ml-3 mr-2" aria-hidden="true"></i><span class="hidden-xs text-dark">My Cart<sup class="text-primary">(3)</sup></span> </a>
+      </ul>
+  </nav> -->
+<!--=========-TOP_BAR============-->
+
+
+
+
+
+
+<!-- forget password -->

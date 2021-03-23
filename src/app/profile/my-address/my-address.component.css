@@ -1,0 +1,236 @@
+.fontAccount{
+    font-size: 18px;
+    font-family: 'Celias_Bold';
+    color:#285CF0;
+}
+.fontSizeAddress{
+    font-size: 18px;
+    font-family: 'Celias_Med';
+    margin-top: 8px;
+}
+.fontadress{
+    font-size: 13px;
+    font-family: 'Celias_Reg';
+   color: #6E6E6E;
+}
+.adressEdit{
+    font-size: 18px;
+    font-family: 'Celias_Bold';
+   color: #285CF0;
+}
+
+
+.circle{
+font-size: 30px;
+
+color: #285CF0;
+    position: relative;
+    margin: 78px 183px;;
+    display: inline-block;
+  }
+  .CardTextBox{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .formTExt{
+    text-align: left;
+    font-family: 'Celias_Med';
+    font-size: 15px;
+  }
+  .topClass{
+    margin-left: 81px;
+}
+.p-five {
+    padding: 3rem !important;
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .imageheiMob{
+     position: absolute;
+     height: 104%;
+     width: 100%;
+     max-width: 99%;
+     margin-left: -6px;
+    }.circle{
+        font-size: 23px;
+        color: #285CF0;
+        position: relative;
+        margin: 82px 125px;
+        display: inline-block;
+    }
+    .p-five {
+        padding: 0rem !important;
+      }
+    .topClass{
+        margin-left:0px ;
+    }
+    .AccountEdit{
+       float: left;
+        font-size: 15px;
+        font-family: 'Celias_Bold';
+        color: black;
+    }
+    .saveButton{
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+        margin-left: 57px;
+        margin-top: 35px;
+        padding: 11px 48px;
+        font-size: 14px;
+        font-family: 'Celias_Med';
+        border-radius: 4px;
+        border: none;
+    }
+    .mobileMargin{
+        margin-top: 20px;
+    }
+
+.mt-5{
+    margin-top: 1rem !important;
+}
+.circle {
+  font-size: 23px;
+  color: #285CF0;
+  position: relative;
+  margin: 80px 70px;
+  display: inline-block;
+}
+    }
+    @media only screen and (max-width: 425px) {
+      .imageheiMob{
+       position: absolute;
+       height: 104%;
+       width: 100%;
+       max-width: 99%;
+       margin-left: -6px;
+      }
+      .topClass{
+          margin-left:0px ;
+      }
+      .AccountEdit{
+         float: left;
+          font-size: 15px;
+          font-family: 'Celias_Bold';
+          color: black;
+      }
+      .saveButton{
+          color: #fff;
+          background-color: #007bff;
+          border-color: #007bff;
+          margin-left: 57px;
+          margin-top: 35px;
+          padding: 11px 48px;
+          font-size: 14px;
+          font-family: 'Celias_Med';
+          border-radius: 4px;
+          border: none;
+      }
+      .mobileMargin{
+          margin-top: 20px;
+      }
+  
+  .mt-5{
+      margin-top: 1rem !important;
+  }
+  .circle {
+    font-size: 23px;
+    color: #285CF0;
+    position: relative;
+    margin: 80px 70px;
+    display: inline-block;
+  }
+      }
+      @media only screen and (max-width: 576px) {
+        .imageheiMob{
+         position: absolute;
+         height: 104%;
+         width: 100%;
+         max-width: 99%;
+         margin-left: -6px;
+        }
+        .topClass{
+            margin-left:0px ;
+        }
+        .AccountEdit{
+           float: left;
+            font-size: 15px;
+            font-family: 'Celias_Bold';
+            color: black;
+        }
+        .saveButton{
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+            margin-left: 57px;
+            margin-top: 35px;
+            padding: 11px 48px;
+            font-size: 14px;
+            font-family: 'Celias_Med';
+            border-radius: 4px;
+            border: none;
+        }
+        .mobileMargin{
+            margin-top: 20px;
+        }
+    
+    .mt-5{
+        margin-top: 1rem !important;
+    }
+    .circle {
+      font-size: 23px;
+      color: #285CF0;
+      position: relative;
+      margin: 80px 70px;
+      display: inline-block;
+    }
+        }
+        @media only screen and (max-width: 7686px) {
+            .imageheiMob{
+             position: absolute;
+             height: 104%;
+             width: 100%;
+             max-width: 99%;
+             margin-left: -6px;
+            }
+            .topClass{
+                margin-left:0px ;
+            }
+            .AccountEdit{
+               float: left;
+                font-size: 15px;
+                font-family: 'Celias_Bold';
+                color: black;
+            }
+            .saveButton{
+                color: #fff;
+                background-color: #007bff;
+                border-color: #007bff;
+                margin-left: 57px;
+                margin-top: 35px;
+                padding: 11px 48px;
+                font-size: 14px;
+                font-family: 'Celias_Med';
+                border-radius: 4px;
+                border: none;
+            }
+            .mobileMargin{
+                margin-top: 0px;
+            }
+        
+        .mt-5{
+            margin-top: 1rem !important;
+        }
+        .circle {
+          font-size: 23px;
+          color: #285CF0;
+          position: relative;
+          margin: 80px 70px;
+          display: inline-block;
+        }
+            }

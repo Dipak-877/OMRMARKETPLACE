@@ -1,0 +1,443 @@
+<app-header></app-header>
+<div class="container-fluid" style="margin-top: 7%;">
+    <div class="row">
+        <div class="col-lg-12"><span routerLink="/home">
+                <i class="fa fa-backward"></i>Back to Page</span>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="topnav p-3">
+                <p href="#contact">Nearby available in 145 restaurants</p>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Dishes, restaurants or cuisines.." name="search">
+                        <button type="submit" class="d-none d-sm-block"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- <section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">E-COMMERCE CATEGORY</h1>
+        <p class="lead text-muted mb-0">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte...</p>
+    </div>
+</section> -->
+<!-- <div class="container">
+    <div class="row">
+        <div class="col">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="category.html">Category</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Sub-category</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div> -->
+
+<div class="container-fluid">
+    <button class="navbar-toggler d-lg-none" type="button" (click)="isshow = !isshow" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i> </button>
+    <div class="row">
+        <div class=" col-12 col-sm-2 col-lg-2 col-md-4 m-3" [collapse]="isshow">
+            <div class="card bg-white mb-3 border-0">
+                <div class="card-header text-dark bg-white border-0 producttext"> Sort</div>
+                <ul class="list-group">
+                    <li>
+                        <input type="radio" id="f-top" name="selector">
+                        <label for="f-top" class="productListSidebar">Top Related</label>
+                        <div class="check"></div>
+                    </li>
+                    <li>
+                        <input type="radio" id="s-Reccomended" name="selector">
+                        <label for="s-Reccomended" class="productListSidebar">Recomended</label>
+                        <div class="check"></div>
+
+                    </li>
+                    <li>
+                        <input type="radio" id="s-price" name="selector">
+                        <label for="s-price" class="productListSidebar">Price: Low to High</label>
+                        <div class="check"></div>
+
+                    </li>
+                    <li>
+                        <input type="radio" id="s-off" name="selector">
+                        <label for="s-off" class="productListSidebar">Get Up to 15% off</label>
+                        <div class="check"></div>
+
+                    </li>
+                    <li>
+                        <input type="radio" id="s-offers" name="selector">
+                        <label for="s-offers" class="productListSidebar">All Offers</label>
+                        <div class="check"></div>
+
+                    </li>
+                    <li>
+                        <input type="radio" id="s-offers" name="selector">
+                        <label for="s-offers" class="productListSidebar">Distance</label>
+                        <div class="check"></div>
+
+                    </li>
+
+                </ul>
+            </div>
+            <div class="card bg-white mb-3 border-0">
+                <div class="card-header text-dark bg-white border-0 producttext"> Categories</div>
+                <ul class="list-group">
+                    <li>
+                        <label class="container dataList productListSidebar">South India
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="container dataList productListSidebar">North India
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="container dataList productListSidebar">Chinese
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="container dataList productListSidebar">Fast Food
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="container dataList productListSidebar">Desert
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="container dataList productListSidebar">Grocery
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="card bg-white mb-3 border-0">
+                <button class="btn btn-outline-primary btn-block btn-lg text-dark">
+                    More</button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card polaroid">
+                        <img src="assets/img/product2.png" style="height: auto" class="rounded" alt="Cinque Terre" routerLink="/product"/>
+                        <button class="topleftbtn1 btn btn-sm btn-warning">10 offers
+                        </button>
+                        <button class="topRightBtn btn btn-sm btn-light">Burgeer
+                        </button>
+                        <div class="card-body gapCard">
+                        <span class="card-title text-warning classColor">Da Alfredo</span>
+                        <p class="card-text  text-warning " style="float: right;">68 5Th Avenue New York</p>
+                        </div>
+                        <hr />
+                        <div class="card-footer bg-white border-0"><i class="fa fa-motorcycle mr-2"
+                            style="font-size: 20px;" aria-hidden="true"></i>
+                        <small class="text-muted mr-4 productListSidebar">Delivery</small><span
+                            class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star  checkedStar"></span>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card polaroid">
+                        <img src="assets/img/product3.png" style="height: auto" class="rounded" alt="Cinque Terre" />
+                        <button class="topleftbtn1 btn btn-sm btn-warning">10 offers
+                        </button>
+                        <button class="topRightBtn btn btn-sm btn-light">Burgeer
+                        </button>
+                        <div class="card-body gapCard">
+                        <span class="card-title text-warning classColor">Da Alfredo</span>
+                        <p class="card-text  text-warning " style="float: right;">68 5Th Avenue New York</p>
+                        </div>
+                        <hr />
+                        <div class="card-footer bg-white border-0"><i class="fa fa-motorcycle mr-2"
+                            style="font-size: 20px;" aria-hidden="true"></i>
+                        <small class="text-muted mr-4 productListSidebar">Delivery</small><span
+                            class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star  checkedStar"></span>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card polaroid">
+                        <img src="assets/img/plp1.png" style="height: auto" class="rounded" alt="Cinque Terre" />
+                        <button class="topleftbtn1 btn btn-sm btn-warning">10 offers
+                        </button>
+                        <button class="topRightBtn btn btn-sm btn-light">Burgeer
+                        </button>
+                        <div class="card-body gapCard">
+                        <span class="card-title text-warning classColor">Da Alfredo</span>
+                        <p class="card-text  text-warning " style="float: right;">68 5Th Avenue New York</p>
+                        </div>
+                        <hr />
+                        <div class="card-footer bg-white border-0"><i class="fa fa-motorcycle mr-2"
+                            style="font-size: 20px;" aria-hidden="true"></i>
+                        <small class="text-muted mr-4 productListSidebar">Delivery</small><span
+                            class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star  checkedStar"></span>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-2">
+                    <div class="card polaroid">
+                        <img src="assets/img/plp2.png" style="height: auto" class="rounded" alt="Cinque Terre" />
+                        <button class="topleftbtn1 btn btn-sm btn-warning">10 offers
+                        </button>
+                        <button class="topRightBtn btn btn-sm btn-light">Burgeer
+                        </button>
+                        <div class="card-body gapCard">
+                        <span class="card-title text-warning classColor">Da Alfredo</span>
+                        <p class="card-text  text-warning " style="float: right;">68 5Th Avenue New York</p>
+                        </div>
+                        <hr />
+                        <div class="card-footer bg-white border-0"><i class="fa fa-motorcycle mr-2"
+                            style="font-size: 20px;" aria-hidden="true"></i>
+                        <small class="text-muted mr-4 productListSidebar">Delivery</small><span
+                            class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star  checkedStar"></span>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-2">
+                    <div class="card polaroid">
+                        <img src="assets/img/plp3.png" style="height: auto" class="rounded" alt="Cinque Terre" />
+                        <button class="topleftbtn1 btn btn-sm btn-warning">10 offers
+                        </button>
+                        <button class="topRightBtn btn btn-sm btn-light">Burgeer
+                        </button>
+                        <div class="card-body gapCard">
+                        <span class="card-title text-warning classColor">Da Alfredo</span>
+                        <p class="card-text  text-warning " style="float: right;">68 5Th Avenue New York</p>
+                        </div>
+                        <hr />
+                        <div class="card-footer bg-white border-0"><i class="fa fa-motorcycle mr-2"
+                            style="font-size: 20px;" aria-hidden="true"></i>
+                        <small class="text-muted mr-4 productListSidebar">Delivery</small><span
+                            class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star  checkedStar"></span>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-2">
+                    <div class="card polaroid">
+                        <img src="assets/img/plp4.png" style="height: auto" class="rounded" alt="Cinque Terre" />
+                        <button class="topleftbtn1 btn btn-sm btn-warning">10 offers
+                        </button>
+                        <button class="topRightBtn btn btn-sm btn-light">Burgeer
+                        </button>
+                        <div class="card-body gapCard">
+                        <span class="card-title text-warning classColor">Da Alfredo</span>
+                        <p class="card-text  text-warning " style="float: right;">68 5Th Avenue New York</p>
+                        </div>
+                        <hr />
+                        <div class="card-footer bg-white border-0"><i class="fa fa-motorcycle mr-2"
+                            style="font-size: 20px;" aria-hidden="true"></i>
+                        <small class="text-muted mr-4 productListSidebar">Delivery</small><span
+                            class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star  checkedStar"></span>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-2">
+                    <div class="card polaroid">
+                        <img src="assets/img/plp5.png" style="height: auto" class="rounded" alt="Cinque Terre" />
+                        <button class="topleftbtn1 btn btn-sm btn-warning">10 offers
+                        </button>
+                        <button class="topRightBtn btn btn-sm btn-light">Burgeer
+                        </button>
+                        <div class="card-body gapCard">
+                        <span class="card-title text-warning classColor">Da Alfredo</span>
+                        <p class="card-text  text-warning " style="float: right;">68 5Th Avenue New York</p>
+                        </div>
+                        <hr />
+                        <div class="card-footer bg-white border-0"><i class="fa fa-motorcycle mr-2"
+                            style="font-size: 20px;" aria-hidden="true"></i>
+                        <small class="text-muted mr-4 productListSidebar">Delivery</small><span
+                            class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star  checkedStar"></span>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-2">
+                    <div class="card polaroid">
+                        <img src="assets/img/plp6.png" style="height: auto" class="rounded" alt="Cinque Terre" />
+                        <button class="topleftbtn1 btn btn-sm btn-warning">10 offers
+                        </button>
+                        <button class="topRightBtn btn btn-sm btn-light">Burgeer
+                        </button>
+                        <div class="card-body gapCard">
+                        <span class="card-title text-warning classColor">Da Alfredo</span>
+                        <p class="card-text  text-warning " style="float: right;">68 5Th Avenue New York</p>
+                        </div>
+                        <hr />
+                        <div class="card-footer bg-white border-0"><i class="fa fa-motorcycle mr-2"
+                            style="font-size: 20px;" aria-hidden="true"></i>
+                        <small class="text-muted mr-4 productListSidebar">Delivery</small><span
+                            class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star  checkedStar"></span>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-2">
+                    <div class="card polaroid">
+                        <img src="assets/img/plp7.png" style="height: auto" class="rounded" alt="Cinque Terre" />
+                        <button class="topleftbtn1 btn btn-sm btn-warning">10 offers
+                        </button>
+                        <button class="topRightBtn btn btn-sm btn-light">Burgeer
+                        </button>
+                        <div class="card-body gapCard">
+                        <span class="card-title text-warning classColor">Da Alfredo</span>
+                        <p class="card-text  text-warning " style="float: right;">68 5Th Avenue New York</p>
+                        </div>
+                        <hr />
+                        <div class="card-footer bg-white border-0"><i class="fa fa-motorcycle mr-2"
+                            style="font-size: 20px;" aria-hidden="true"></i>
+                        <small class="text-muted mr-4 productListSidebar">Delivery</small><span
+                            class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star  checkedStar"></span>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-2">
+                    <div class="card polaroid">
+                        <img src="assets/img/plp8.png" style="height: auto" class="rounded" alt="Cinque Terre" />
+                        <button class="topleftbtn1 btn btn-sm btn-warning">10 offers
+                        </button>
+                        <button class="topRightBtn btn btn-sm btn-light">Burgeer
+                        </button>
+                        <div class="card-body gapCard">
+                        <span class="card-title text-warning classColor">Da Alfredo</span>
+                        <p class="card-text  text-warning " style="float: right;">68 5Th Avenue New York</p>
+                        </div>
+                        <hr />
+                        <div class="card-footer bg-white border-0"><i class="fa fa-motorcycle mr-2"
+                            style="font-size: 20px;" aria-hidden="true"></i>
+                        <small class="text-muted mr-4 productListSidebar">Delivery</small><span
+                            class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star  checkedStar"></span>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-2">
+                    <div class="card polaroid">
+                        <img src="assets/img/plp9.png" style="height: auto" class="rounded" alt="Cinque Terre" />
+                        <button class="topleftbtn1 btn btn-sm btn-warning">10 offers
+                        </button>
+                        <button class="topRightBtn btn btn-sm btn-light">Burgeer
+                        </button>
+                        <div class="card-body gapCard">
+                        <span class="card-title text-warning classColor">Da Alfredo</span>
+                        <p class="card-text  text-warning " style="float: right;">68 5Th Avenue New York</p>
+                        </div>
+                        <hr />
+                        <div class="card-footer bg-white border-0"><i class="fa fa-motorcycle mr-2"
+                            style="font-size: 20px;" aria-hidden="true"></i>
+                        <small class="text-muted mr-4 productListSidebar">Delivery</small><span
+                            class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star  checkedStar"></span>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-2">
+                    <div class="card polaroid">
+                        <img src="assets/img/plp7.png" style="height: auto" class="rounded" alt="Cinque Terre" />
+                        <button class="topleftbtn1 btn btn-sm btn-warning">10 offers
+                        </button>
+                        <button class="topRightBtn btn btn-sm btn-light">Burgeer
+                        </button>
+                        <div class="card-body gapCard">
+                        <span class="card-title text-warning classColor">Da Alfredo</span>
+                        <p class="card-text  text-warning " style="float: right;">68 5Th Avenue New York</p>
+                        </div>
+                        <hr />
+                        <div class="card-footer bg-white border-0"><i class="fa fa-motorcycle mr-2"
+                            style="font-size: 20px;" aria-hidden="true"></i>
+                        <small class="text-muted mr-4 productListSidebar">Delivery</small><span
+                            class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star checkedStar"></span>
+                        <span class="fa fa-star  checkedStar"></span>
+                    </div>
+                    </div>
+                </div>
+           
+            <!-- <div class="col-12 col-lg-12 col-md-12 col-sm-12 center">
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                   
+                    <a href="#">&raquo;</a>
+                </div>
+            </div> -->
+        </div>
+           
+        </div>
+
+    </div>
+
+
+</div>
+<!-- new code -->
+
+
+
+<app-footer></app-footer>

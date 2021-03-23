@@ -1,0 +1,245 @@
+.fontAccount{
+    font-size: 16px;
+    font-family: 'Celias_Bold';
+    color:#285CF0;
+}
+.fontconfir{
+    font-size: 16px;
+    font-family: 'Celias_Med';
+    color:#000000;
+}
+.fontconfirrer{
+    font-size: 12px;
+    font-family: 'Celias_Reg';
+    color:#777777;
+    margin-left:60%
+}
+.btn-outline-primary3{
+    color: white;
+    width: 78%;
+    border-color: #17d649;
+    background: #17d649;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: 'Celias_Bold';
+}
+.btn-outline-secondary3{
+    color: #333333;
+    width: 78%;
+    border-color: #B1B1B1;
+    /* background: #17d649; */
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: 'Celias_Reg';
+}
+.btn-outline-secondary4{
+    color: #333333;
+    width: 78%;
+  
+    /* background: #17d649; */
+    margin-top: 20px;
+    font-size: 14px;
+ 
+    font-family: 'Celias_Reg';
+}
+.topClass{
+    margin-left: 81px;
+}
+.p-five {
+    padding: 3rem !important;
+}
+  @media only screen and (max-width: 320px) {
+    .imageheiMob{
+     position: absolute;
+     height: 104%;
+     width: 100%;
+     max-width: 99%;
+     margin-left: -6px;
+    }
+    .p-five {
+        padding: 0rem !important;
+    }
+    .topClass{
+        margin-left:0px ;
+    }
+    .AccountEdit{
+       float: left;
+        font-size: 15px;
+        font-family: 'Celias_Bold';
+        color: black;
+    }
+    .saveButton{
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+        margin-left: 57px;
+        margin-top: 35px;
+        padding: 11px 48px;
+        font-size: 14px;
+        font-family: 'Celias_Med';
+        border-radius: 4px;
+        border: none;
+    }
+    .mobileMargin{
+        margin-top: 20px;
+    }
+
+.mt-5{
+    margin-top: 1rem !important;
+}
+.circle {
+  font-size: 23px;
+  color: #285CF0;
+  position: relative;
+  margin: 80px 70px;
+  display: inline-block;
+}
+    }
+    @media only screen and (max-width: 425px) {
+        .imageheiMob{
+         position: absolute;
+         height: 104%;
+         width: 100%;
+         max-width: 99%;
+         margin-left: -6px;
+        }
+        .p-five {
+            padding: 0rem !important;
+        }
+        .topClass{
+            margin-left:0px ;
+        }
+        .AccountEdit{
+           float: left;
+            font-size: 15px;
+            font-family: 'Celias_Bold';
+            color: black;
+        }
+        .saveButton{
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+            margin-left: 57px;
+            margin-top: 35px;
+            padding: 11px 48px;
+            font-size: 14px;
+            font-family: 'Celias_Med';
+            border-radius: 4px;
+            border: none;
+        }
+        .mobileMargin{
+            margin-top: 20px;
+        }
+    
+    .mt-5{
+        margin-top: 1rem !important;
+    }
+    .circle {
+      font-size: 23px;
+      color: #285CF0;
+      position: relative;
+      margin: 80px 70px;
+      display: inline-block;
+    }
+        }
+        @media only screen and (max-width: 567px) {
+            .imageheiMob{
+             position: absolute;
+             height: 104%;
+             width: 100%;
+             max-width: 99%;
+             margin-left: -6px;
+            }
+            .p-five {
+                padding: 0rem !important;
+            }
+            .topClass{
+                margin-left:0px ;
+            }
+            .AccountEdit{
+               float: left;
+                font-size: 15px;
+                font-family: 'Celias_Bold';
+                color: black;
+            }
+            .saveButton{
+                color: #fff;
+                background-color: #007bff;
+                border-color: #007bff;
+                margin-left: 57px;
+                margin-top: 35px;
+                padding: 11px 48px;
+                font-size: 14px;
+                font-family: 'Celias_Med';
+                border-radius: 4px;
+                border: none;
+            }
+            .mobileMargin{
+                margin-top: 20px;
+            }
+        
+        .mt-5{
+            margin-top: 1rem !important;
+        }
+        .circle {
+          font-size: 23px;
+          color: #285CF0;
+          position: relative;
+          margin: 80px 70px;
+          display: inline-block;
+        }
+            }
+            @media only screen and (max-width: 768px) {
+                .imageheiMob{
+                 position: absolute;
+                 height: 104%;
+                 width: 100%;
+                 max-width: 99%;
+                 margin-left: -6px;
+                }
+                .fontconfirrer768{
+                    font-size: 12px;
+                    font-family: 'Celias_Reg';
+                    color: #777777;
+                    margin-left: 22%;
+                    /* text-align: left; */
+                }
+                .p-five {
+                    padding: 0rem !important;
+                }
+                .topClass{
+                    margin-left:0px ;
+                }
+                .AccountEdit{
+                   float: left;
+                    font-size: 15px;
+                    font-family: 'Celias_Bold';
+                    color: black;
+                }
+                .saveButton{
+                    color: #fff;
+                    background-color: #007bff;
+                    border-color: #007bff;
+                    margin-left: 57px;
+                    margin-top: 35px;
+                    padding: 11px 48px;
+                    font-size: 14px;
+                    font-family: 'Celias_Med';
+                    border-radius: 4px;
+                    border: none;
+                }
+                .mobileMargin{
+                    margin-top: 20px;
+                }
+            
+            .mt-5{
+                margin-top: 1rem !important;
+            }
+            .circle {
+              font-size: 23px;
+              color: #285CF0;
+              position: relative;
+              margin: 80px 70px;
+              display: inline-block;
+            }
+                }

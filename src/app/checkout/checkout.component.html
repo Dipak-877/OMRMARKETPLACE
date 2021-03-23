@@ -1,0 +1,295 @@
+<app-header></app-header>
+<div clas="container-fluid" style="margin-top: 100px;" *ngIf="ordesucessNo">
+  
+  <div class="row jumbotron">
+      <div class="col-lg-12"><span routerLink="/product"><i class="fa fa-backward mr-2"></i>Back to Page</span></div>
+    <div class="col-12 col-sm-12 col-lg-12 col-md-12">
+      <div class="row">
+        <!-- <div class="col-0 col-sm-0 col-md-1 col-lg-1 ">
+                
+            </div> -->
+        <div class=" col-12 ol-sm-12 col-md-12 col-lg-8 ">
+          <div class="card text-center">
+            <div class="card-header bg-dark">
+              <h1 class="text-left text-header">Personal Details </h1>
+            </div>
+            <div class="card-body bg-white">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+
+
+                  <p for="usr" class="formTExt">First Name</p>
+                  <input type="text" class="CardTextBox" id="usr">
+
+                </div>
+                <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+                  <p for="usr" class="formTExt">Last Name</p>
+                  <input type="text" class="CardTextBox" id="usr">
+                </div>
+                <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+                  <p for="usr" class="formTExt">Email Adress</p>
+                  <input type="Email" class="CardTextBox" id="usr">
+                </div>
+                <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+
+                  <p for="usr" class="formTExt">Mobile Number</p>
+                  <input type="text" class="CardTextBox" id="usr">
+                </div>
+                <div class="col-12 col-sm-12 col-lg-12 col-md-12">
+
+                  <p for="usr" class="formTExt">Full Address</p>
+                  <input type="text" class="CardTextBox" id="usr">
+                </div>
+                <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+                  <p for="usr" class="formTExt">City</p>
+                  <input type="text" class="CardTextBox" id="usr">
+                </div>
+                <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+
+                  <p for="usr" class="formTExt">Postal code</p>
+                  <input type="text" class="CardTextBox" id="usr">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-lg-4 col-md-12" style="max-height: 560px;">
+          <div class="card text-center">
+            <div class="card-header bg-dark">
+              <h1 class="text-white text-left">Your Order</h1>
+            </div>
+            <div class="card-body bg-light">
+              <div class="row m-3">
+                <div class="col-6">
+                  <span class="success-checkmark"></span>
+                  <p class="card-text lead text-left orderText">Da Alfredo </p>
+
+                </div>
+                <div class="col-6">
+
+                  <p class="card-text lead" style="font-size: 100%">₹19.00</p>
+                </div>
+              </div>
+              <div class="row m-3">
+                <div class="col-6">
+                  <span class="success-checkmark"></span>
+                  <p class="card-text lead text-left orderText">Beef Taco </p>
+
+
+                </div>
+                <div class="col-6">
+
+                  <p class="card-text lead" style="font-size: 100%">₹19.00</p>
+                </div>
+              </div>
+              <div class="row m-3">
+                <div class="col-6">
+                  <span class="success-checkmark"></span>
+                  <p class="card-text lead text-left orderText">Chorizo & Cheese </p>
+
+                </div>
+                <div class="col-6">
+
+                  <p class="card-text lead" style="font-size: 100%">₹ 19.00 </p>
+                </div>
+              </div>
+              <div class="row m-3">
+                <div class="col-6">
+                  <span class="success-checkmark"></span>
+                  <p class="card-text lead text-left orderText">White Wine </p>
+
+                </div>
+                <div class="col-6">
+
+                  <p class="card-text lead" style="font-size: 100%">₹ 19.00 </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body mt-3 bg-light">
+              <div class="row m-3">
+                <div class="col-6">
+                  <span class="success-checkmark"></span>
+                  <p class="card-text lead text-left orderText">Subtotal </p>
+
+                </div>
+                <div class="col-6">
+
+                  <p class="card-text lead" style="font-size: 100%">₹ 19.00 </p>
+                </div>
+              </div>
+              <div class="row m-3">
+                <div class="col-6">
+                  <span class="success-checkmark"></span>
+                  <p class="card-text lead text-left orderText">Tax </p>
+
+                </div>
+                <div class="col-6">
+
+                  <p class="card-text lead" style="font-size: 100%">₹ 19.00 </p>
+                </div>
+              </div>
+              <div class="row m-3">
+                <div class="col-6">
+                  <span class="success-checkmark"></span>
+                  <p class="card-text lead text-left" style="font-size: 100%">Delivery </p>
+
+                </div>
+                <div class="col-6">
+
+                  <p class="card-text lead" style="font-size: 100%">₹ 19.00 </p>
+                </div>
+              </div>
+              <div class="row m-3">
+                <div class="col-6">
+                  <span class="success-checkmark"></span>
+                  <p class="card-text lead text-left" style="font-size: 18px;font-family: 'Celias_Bold';
+                  color: black;">Total </p>
+
+                </div>
+                <div class="col-6">
+
+                  <p class="card-text " tyle="font-size: 18px;font-family: 'Celias_Bold';
+                    color: black;">₹ 19.00 </p>
+                </div>
+              </div>
+
+            </div>
+            <div class="card-body mt-3 bg-light">
+              <div class="row">
+                <div class="col-6">
+                  <label for="one" style="float: left;">
+                    <input type="radio" id="one" name="first_item" value="1" (click)=" showDayClick()" />
+                    Time to Delivery
+                  </label>
+
+                </div>
+                <div class="col-6">
+                  <label for="one">
+                    <input type="radio" id="one" name="first_item" value="1" (click)=" showDayClick()" />
+                    Pick Up
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="card-body mt-3 bg-light">
+              <div class="row m-3">
+                <div class="col-12 col-sm-12 col-lg-12 col-md-12" *ngIf="pickupday">
+                
+                  <input type="text" class="CardTextBox" id="credir" #dp="bsDatepicker"
+                  bsDatepicker
+                  [bsValue]="bsValue" placeholder="Day">
+              </div>
+              <div class="col-12 col-sm-12 col-lg-12 col-md-12 " style="    text-align: -webkit-center;"*ngIf="pickupTime">
+                <timepicker [(ngModel)]="myTime" [showMeridian]="isMeridian" [showSpinners]="showSpinners"></timepicker>
+            </div> 
+                <div class="col-12 mt-3">
+
+                  <button style="z-index: 1000;" class="btn btn-primary btn-lg btn-block" onclick="location.href='/sucess';">Confirm Order</button>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="row">
+            <div class="col-8 ol-sm-8 col-md-8 col-lg-8 mt-5">
+              <div class="card text-center">
+                <div class="card-header bg-dark">
+                  <h1 class="text-left text-header">Payment Method </h1>
+                </div>
+                <div class="card-body bg-white">
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-lg-12 col-md-12 bg-color p-3">
+                      <div class="form-check text-left">
+                        <label class="form-check-label testCre">
+                          <input type="radio" class="form-check-input " name="paypal" value="">Credit Card
+                        </label>
+                        <span class="creditCardSize"><i class="fa fa-credit-card" aria-hidden="true"></i></span>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-lg-12 col-md-12">
+                      <p for="usr" class="formTExt">Name on card</p>
+                      <input type="text" class="CardTextBox" id="credir" placeholder="Name">
+                    </div>
+                    <div class="col-12 col-sm-12 col-lg-12 col-md-12">
+                      <p for="usr" class="formTExt">Card number</p>
+                      <input type="text" class="CardTextBox" id="credir" placeholder="Card number">
+                    </div>
+                    <div class="col-12 col-sm-12 col-lg-3 col-md-3">
+                      <p for="usr" class="formTExt">Expiration date</p>
+                      <input type="text" class="CardTextBox" id="usr" placeholder="MM">
+                    </div>
+                    <div class="col-12 col-sm-12 col-lg-3 col-md-3 ">
+
+
+                      <p for="usr" class="formTExt">Expiration Year</p>
+                      <input type="text" class="CardTextBox" id="usr" placeholder="YYYY">
+                    </div>
+                    <div class="col-12 col-sm-12 col-lg-3 col-md-3">
+
+                      <p for="usr" class="formTExt">Security code</p>
+                      <input type="text" class="CardTextBox" id="usr">
+                    </div>
+
+
+                  </div>
+                </div>
+                <div class="card-body bg-white">
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-lg-12 col-md-12 bg-color p-3">
+                      <div class="form-check text-left">
+                        <label class="form-check-label testCre" for="datapayS">
+                          <input type="radio" class="form-check-input" id="datapayS" name="paypal" value="">Pay with
+                          Paypal
+                        </label>
+                        <span class="creditCardSize"><i class="fa fa-paypal"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body bg-white">
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-lg-12 col-md-12 bg-color p-3">
+                      <div class="form-check text-left">
+                        <label class="form-check-label testCre" for="datapayS">
+                          <input type="radio" class="form-check-input" id="datapayS" name="paypal" value="">Pay with
+                          Cash
+                        </label>
+                        <span class="creditCardSize"><i class="fa fa-money-bill"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<app-footer></app-footer>
+
+<div class="container-fluid" *ngIf="OrderSucess">
+  <div class="row">
+    <div class="content-block">
+
+      <div class="col-md-4 content">
+        <div class="tag">
+          <p>TEST2</p>
+        </div>
+        <p>This is an example</p>
+      </div>
+
+    </div>
+  </div>
+</div>

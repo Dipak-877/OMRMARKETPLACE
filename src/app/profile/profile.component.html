@@ -1,0 +1,42 @@
+<app-header></app-header>
+<div class="row " style="margin-top: 100px;">
+    <button class="navbar-toggler bar-icon d-lg-none btn  btn-sm btn-warning" style="    margin-left: 20px;" type="button"data-toggle="collapse"(click)="isshowpro = !isshowpro" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+     </button>
+    <div class="col-12 col-sm-12 col-lg-12 col-md-12">
+      
+      
+        <img src="assets/img/profilewall.png"  class="imageheiMob imageTop">
+      
+        <div class="row  mt-5">
+            <div class="col-12 col-sm-12 col-lg-3 col-md-6  bg-white topClass" id="sidebar" [collapse]="isshowpro">
+                <ul class="nav flex-column p-5">
+                    <li class="nav-item myProfiletext  mb-3 ">
+                        <a class="nav-link text-truncate active"> <span class="d-md-block d-sm-block"
+                                (click)="assignCom('account')">My Account</span></a>
+                    </li>
+                    <li class="nav-item myProfiletext mb-3"><a class="nav-link text-truncate"> <span
+                                class="d-md-block d-sm-block" (click)="assignCom('address')">My Address</span></a></li>
+                    <li class="nav-item myProfiletext mb-3"><a class="nav-link text-truncate"><span
+                                class="d-md-block d-sm-block" (click)="assignCom('orders')">My Orders</span></a></li>
+                    <li class="nav-item myProfiletext mb-3"><a class="nav-link text-truncate"> <span
+                                class="d-md-block d-sm-block" (click)="assignCom('favou')">My Favourites</span></a></li>
+                    <li class="nav-item myProfiletext mb-3"><a class="nav-link text-truncate"> <span
+                                class="d-md-block d-sm-block" (click)="assignCom('change')">Change Password</span></a></li>
+                    <li class="nav-item myProfiletext mb-3"><a class="nav-link text-truncate"> <span
+                                class="d-md-block d-sm-block">Logout</span></a></li>
+
+                </ul>
+            </div>
+            <div class="col-12 col-lg-8 col-md-6 col-sm-12">
+                <ng-container *ngComponentOutlet="dynamicComp"></ng-container>
+                <!-- <h2>
+                <a href="" data-target="#sidebar" data-toggle="collapse" class="d-md-none"><i class="fa fa-bars"></i></a> Content </h2>
+            <h6 class="hidden-sm-down">Shrink page width to see sidebar collapse</h6> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<app-footer></app-footer>

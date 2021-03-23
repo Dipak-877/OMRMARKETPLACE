@@ -1,0 +1,20 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@font-face {
+    font-family: "Celias_Reg";
+    src:  url(./assets/fonts/Celias_Reg.woff);
+}
+@font-face {
+    font-family: "Celias_Bold";
+    src:  url(./assets/fonts/Celias_Bold.woff);
+}
+@font-face {
+    font-family: "Celias_Med";
+    src:  url(./assets/fonts/Celias_Medium.woff);
+}
+@font-face {
+    font-family: "Poppins_Med";
+    src:  url(./assets/fonts/Poppins-Regular.ttf);
+}

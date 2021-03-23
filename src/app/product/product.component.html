@@ -1,0 +1,519 @@
+<app-header></app-header>
+<div class="container-fluid" style="margin-top: 110px;">
+  <div class="row">
+    <div class="col-lg-12 col-sm-12 col-md-12 col-12"><span routerLink="/product-listing">
+      <i class="fa fa-backward mr-2"></i>Back to Page</span>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+      <img class="card-img-top" src="assets/img/hero_general.png" style="height: 100%;max-width: 100%;"alt="Card image cap">
+      <div class="productsectionleft"> <span class="fa fa-star checkedster"></span>
+        <span class="fa fa-star checkedster"></span>
+        <span class="fa fa-star checkedster"></span>
+        <span class="fa fa-star checkedster"></span>
+        <span class="fa fa-star  checkedster mr-4"></span><small class=" mr-4 reviewcount">35 Reviews</small>
+        <p class="productEst">Pizzeria <i class="fa fa-circle circlegreen" aria-hidden="true"></i>  Da Alfredo</p>
+        <p class="reviewcount roundboxcount">
+          <i class="fa fa-check-circle" aria-hidden="true"></i> Delivering to: Chennai</p>
+        <!-- <a href="#" class="reviewcount">Get directions</a> -->
+        <div class="offer-entire">
+          <div class="offer-max-next">
+            <div class="cUqbTf">
+              <div class="fNMWNE">
+                <div class="lkqupg">
+                  PRO extra 20% OFF
+                </div>
+                <div class="kvnZBD">
+                  Available on the App
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="bottomright">
+        <button type="button" class="bannerButton buttonest "><i class="fa fa-file mr-2"></i>View photos</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-lg-12 col-sm-12 col-12 mr-5">
+      <button type="button" class="buttonline buttonest " (click)="staterClick()">Starters</button>
+      <button type="button" class="buttonline buttonest" (click)="MainClick()">Main Courses</button>
+      <button type="button" class="buttonline buttonest" (click)="dessertsClick()">Desserts</button>
+      <button type="button" class="buttonline buttonest  " (click)="drinksClick()">Drinks</button>
+      <button type="button" class="buttonReview buttonest"><i class="fa fa-comments mr-2"></i>Reviews</button>
+    </div>
+  </div>
+  <div class="row jumbotron">
+    <div class="col-12 col-sm-12 col-lg-12 col-md-12">
+
+      <div class="row">
+        <div class="col-12 col-sm-12 col-lg-8 col-md-12">
+          <h1 class="productcardHeader" *ngIf="statreCorse">Starters</h1>
+          <div class="row" *ngIf="statreCorse">
+            <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+              <div class="card mb-3">
+                <div class="row no-gutters">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 class="productcard"><i class="fa fa-circle circlegreen" aria-hidden="true"></i>  Pub Devil Paneer Burger</h2>
+                      <p class="card-text  productcard2"></p>
+                      <span class="fontSize productcard3">₹ 19.00</span>
+                      <span class="quantity buttons_added" *ngIf="!showMainContent">
+                        <input type="button" (click)="ShowHideButton()" value="-" class="minus"><input type="number"
+                          step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text"
+                          size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                      </span>
+                      <span *ngIf="showMainContent" (click)="ShowHideButton()" class="btn btn-outline-primary btn-sm"
+                        style="float: right;">Add to Cart</span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="assets/img/pdp1.webp" class="card-img img-rounded mt-3 imgFormobile" style="width: 100%;"
+                      alt="...">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+              <div class="card mb-3">
+                <div class="row no-gutters">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 class="productcard"><i class="fa fa-circle circlered" aria-hidden="true"></i>Chole Bhatura [Full]</h2>
+                      <p class="card-text  productcard2"></p>
+                      <span class="fontSize productcard3">₹ 19.00</span>
+                      <span class="btn btn-outline-primary btn-sm" style="float: right;">Add to Cart</span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="assets/img/pdp2.webp" class="card-img img-rounded mt-3 imgFormobile" style="width: 100%;"
+                      alt="...">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+              <div class="card mb-3">
+                <div class="row no-gutters">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 class="productcard"><i class="fa fa-circle circlered" aria-hidden="true"></i>Tandoori Chicken</h2>
+                      <p class="card-text  productcard2"></p>
+                      <span class="fontSize productcard3">₹ 19.00</span>
+                      <span class="btn btn-outline-primary btn-sm" style="float: right;">Add to Cart</span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="assets/img/pdp3.webp" class="card-img img-rounded mt-3 imgFormobile" style="width: 100%;"
+                      alt="...">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+              <div class="card mb-3">
+                <div class="row no-gutters">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 class="productcard"><i class="fa fa-circle circlegreen" aria-hidden="true"></i>  Masala Dosai</h2>
+                      <p class="card-text  productcard2"></p>
+                      <span class="fontSize productcard3">₹ 19.00</span>
+                      <span class="btn btn-outline-primary btn-sm" style="float: right;">Add to Cart</span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="assets/img/pdp4.webp" class="card-img img-rounded mt-3 imgFormobile" style="width: 100%;"
+                    alt="...">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+              <div class="card mb-3">
+                <div class="row no-gutters">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 class="productcard"><i class="fa fa-circle circlered" aria-hidden="true"></i>  Kadhai Chicken</h2>
+                      <p class="card-text  productcard2"></p>
+                      <span class="fontSize productcard3">₹ 19.00</span>
+                      <span class="btn btn-outline-primary btn-sm" style="float: right;">Add to Cart</span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="assets/img/pdp5.webp" class="card-img img-rounded mt-3 imgFormobile" style="width: 100%;"
+                    alt="...">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+              <div class="card mb-3">
+                <div class="row no-gutters">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 class="productcard"><i class="fa fa-circle circlegreen" aria-hidden="true"></i>Onion Uttapam</h2>
+                      <p class="card-text  productcard2"></p>
+                      <span class="fontSize productcard3">₹ 19.00</span>
+                      <span class="btn btn-outline-primary btn-sm" style="float: right;">Add to Cart</span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="assets/img/pdp6.webp" class="card-img img-rounded mt-3 imgFormobile" style="width: 100%;"
+                      alt="...">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+          <h1 class="productcardHeader" *ngIf="mainCorse">Main Courses</h1>
+          <div class="row" *ngIf="mainCorse">
+            <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+              <div class="card mb-3">
+                <div class="row no-gutters">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 class="productcard"><i class="fa fa-circle circlered" aria-hidden="true"></i>Chicken Handi Biryani</h2>
+                      <p class="card-text  productcard2"></p>
+                      <span class="fontSize productcard3">₹ 19.00</span>
+                      <span class="btn btn-outline-primary btn-sm" style="float: right;">Add to Cart</span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="assets/img/pdp7.webp" class="card-img img-rounded mt-3 imgFormobile" style="width: 100%;"
+                      alt="...">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+              <div class="card mb-3">
+                <div class="row no-gutters">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 class="productcard"><i class="fa fa-circle circlegreen" aria-hidden="true"></i>  Mezze Platter Veg</h2>
+                      <p class="card-text  productcard2"></p>
+                      <span class="fontSize productcard3">₹ 19.00</span>
+                      <span class="btn btn-outline-primary btn-sm" style="float: right;">Add to Cart</span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="assets/img/pdp8.webp" class="card-img img-rounded mt-3 imgFormobile" style="width: 100%;"
+                      alt="...">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1 class="productcardHeader" *ngIf="DrinksCorse">Drinks</h1>
+          <div class="row" *ngIf="DrinksCorse">
+            <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+              <div class="card mb-3">
+                <div class="row no-gutters">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 class="productcard"><i class="fa fa-circle circlered" aria-hidden="true"></i> Iced Choco Hazelnut Latte (Frappe)</h2>
+                      <p class="card-text  productcard2"></p>
+                      <span class="fontSize productcard3">₹ 19.00</span>
+                      <span class="btn btn-outline-primary btn-sm" style="float: right;">Add to Cart</span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="assets/img/pdp10.webp" class="card-img img-rounded mt-3 " style="width: 100%;"
+                      alt="...">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+              <div class="card mb-3">
+                <div class="row no-gutters">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 class="productcard"><i class="fa fa-circle circlegreen" aria-hidden="true"></i>  Lavender hot chocolate</h2>
+                      <p class="card-text  productcard2"></p>
+                      <span class="fontSize productcard3">₹ 19.00</span>
+                      <span class="btn btn-outline-primary btn-sm" style="float: right;">Add to Cart</span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="assets/img/pdp9.webp" class="card-img img-rounded mt-3" style="width: 100%;"
+                      alt="...">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <h1 class="productcardHeader" *ngIf="DessertseCorse">Desserts</h1>
+          <div class="row" *ngIf="DessertseCorse">
+            <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+              <div class="card mb-3">
+                <div class="row no-gutters">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 class="productcard"><i class="fa fa-circle circlered" aria-hidden="true"></i>Barbeque Chicken Wrap</h2>
+                      <p class="card-text  productcard2"></p>
+                      <span class="fontSize productcard3">₹ 19.00</span>
+                      <span class="btn btn-outline-primary btn-sm" style="float: right;">Add to Cart</span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="assets/img/pdp11.webp" class="card-img img-rounded mt-3" style="width: 100%;"
+                      alt="...">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+              <div class="card mb-3">
+                <div class="row no-gutters">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 class="productcard"><i class="fa fa-circle circlegreen" aria-hidden="true"></i>  Cappuccino</h2>
+                      <p class="card-text  productcard2"></p>
+                      <span class="fontSize productcard3">₹ 19.00</span>
+                      <span class="btn btn-outline-primary btn-sm" style="float: right;">Add to Cart</span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="assets/img/pdp12.webp" class="card-img img-rounded mt-3" style="width: 100%;"
+                      alt="...">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-lg-4 col-md-12">
+          <div class="card text-center">
+            <div class="card-header bg-dark">
+              <h1 class="text-white text-left">Your Order</h1>
+            </div>
+            <div class="card-body bg-light">
+              <div class="row m-3">
+                <div class="col-6">
+                  <span class="success-checkmark"></span>
+                  <p class="card-text lead text-left orderText">Pub Devil Paneer Burger </p>
+
+                </div>
+                <div class="col-6">
+
+                  <p class="card-text lead" style="font-size: 100%">₹19.00</p>
+                </div>
+              </div>
+              <div class="row m-3">
+                <div class="col-6">
+                  <span class="success-checkmark"></span>
+                  <p class="card-text lead text-left orderText">Mezze Platter Veg</p>
+
+
+                </div>
+                <div class="col-6">
+
+                  <p class="card-text lead" style="font-size: 100%">₹19.00</p>
+                </div>
+              </div>
+              <div class="row m-3">
+                <div class="col-6">
+                  <span class="success-checkmark"></span>
+                  <p class="card-text lead text-left orderText"> Lavender hot chocolate </p>
+
+                </div>
+                <div class="col-6">
+
+                  <p class="card-text lead" style="font-size: 100%">₹ 19.00 </p>
+                </div>
+              </div>
+              <div class="row m-3">
+                <div class="col-6">
+                  <span class="success-checkmark"></span>
+                  <p class="card-text lead text-left orderText">Cappuccino </p>
+
+                </div>
+                <div class="col-6">
+
+                  <p class="card-text lead" style="font-size: 100%">₹ 19.00 </p>
+                </div>
+              </div>
+            <!-- </div>
+            <div class="card-body mt-3 bg-light"> -->
+              <div class="row m-3">
+                <div class="col-6">
+                  <span class="success-checkmark"></span>
+                  <p class="card-text lead text-left orderText">Subtotal </p>
+
+                </div>
+                <div class="col-6">
+
+                  <p class="card-text lead" style="font-size: 100%">₹ 19.00 </p>
+                </div>
+              </div>
+              <div class="row m-3">
+                <div class="col-6">
+                  <span class="success-checkmark"></span>
+                  <p class="card-text lead text-left orderText">Tax </p>
+
+                </div>
+                <div class="col-6">
+
+                  <p class="card-text lead" style="font-size: 100%">₹ 19.00 </p>
+                </div>
+              </div>
+              <div class="row m-3">
+                <div class="col-6">
+                  <span class="success-checkmark"></span>
+                  <p class="card-text lead text-left" style="font-size: 100%">Delivery </p>
+
+                </div>
+                <div class="col-6">
+
+                  <p class="card-text lead" style="font-size: 100%">₹ 19.00 </p>
+                </div>
+              </div>
+              <div class="row m-3">
+                <div class="col-6">
+                  <span class="success-checkmark"></span>
+                  <p class="card-text lead text-left" style="font-size: 18px;font-family: 'Celias_Bold';
+              color: black;">Total </p>
+
+                </div>
+                <div class="col-6">
+
+                  <p class="card-text " tyle="font-size: 18px;font-family: 'Celias_Bold';
+                color: black;">₹ 19.00 </p>
+                </div>
+              </div>
+
+            </div>
+            <!-- <div class="card-body mt-3 bg-light">
+              <div class="row">
+                <div class="col-6">
+                  <label for="one" style="float: left;">
+                    <input type="radio" id="one" name="first_item" value="1" (click)=" showDayClick()" />
+                    Delivery
+                  </label>
+
+                </div>
+                <div class="col-6">
+                  <label for="one">
+                    <input type="radio" id="one" name="first_item" value="1" (click)=" showDayClick()" />
+                    Pick Up
+                  </label>
+                </div>
+              </div>
+            </div> -->
+            <div class="card-body mt-3 bg-light">
+              <div class="row m-3">
+                <!-- <div class="col-12 col-sm-12 col-lg-12 col-md-12" *ngIf="pickupday">
+                
+                  <input type="text" class="CardTextBox" id="credir" #dp="bsDatepicker"
+                  bsDatepicker
+                  [bsValue]="bsValue" placeholder="Day">
+              </div>
+              <div class="col-12 col-sm-12 col-lg-12 col-md-12 "*ngIf="pickupTime">
+                <timepicker [(ngModel)]="myTime" [showMeridian]="isMeridian" [showSpinners]="showSpinners"></timepicker>
+            </div> -->
+                <div class="col-12 mt-3">
+
+                  <button class="btn btn-primary btn-lg btn-block" routerLink="/checkout">Checkout</button>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="col-12 col-lg-12 col-md-12 col-sm-12 center">
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+    </div> -->
+  </div>
+
+</div>
+
+<app-footer></app-footer>
+
+<!-- Footer -->
+<!-- <footer class="text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-lg-4 col-xl-3">
+                <h5>About</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <p class="mb-0">
+                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
+                </p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+                <h5>Informations</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><a href="">Link 1</a></li>
+                    <li><a href="">Link 2</a></li>
+                    <li><a href="">Link 3</a></li>
+                    <li><a href="">Link 4</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+                <h5>Others links</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><a href="">Link 1</a></li>
+                    <li><a href="">Link 2</a></li>
+                    <li><a href="">Link 3</a></li>
+                    <li><a href="">Link 4</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3">
+                <h5>Contact</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-home mr-2"></i> My company</li>
+                    <li><i class="fa fa-envelope mr-2"></i> email@example.com</li>
+                    <li><i class="fa fa-phone mr-2"></i> + 33 12 14 15 16</li>
+                    <li><i class="fa fa-print mr-2"></i> + 33 12 14 15 16</li>
+                </ul>
+            </div>
+            <div class="col-12 copyright mt-3">
+                <p class="float-left">
+                    <a href="#">Back to top</a>
+                </p>
+                <p class="text-right text-muted">created with <i class="fa fa-heart"></i> by <a href="https://t-php.fr/43-theme-ecommerce-bootstrap-4.html"><i>t-php</i></a> | <span>v. 1.0</span></p>
+            </div>
+        </div>
+    </div>
+</footer> -->
